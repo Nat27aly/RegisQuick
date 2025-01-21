@@ -1,5 +1,7 @@
 # RegisQuick
 
+![image](https://github.com/user-attachments/assets/415e5b47-5f12-4645-b292-5cdfe9f4356f)
+
 ## Descripción
 RegisQuick es una aplicación web para el registro de usuarios. Incluye validación del lado del cliente y del servidor, con un diseño limpio y una experiencia de usuario fluida.
 
