@@ -1,0 +1,195 @@
+:root {
+    --color-primary: brown;
+    --color-secondary: #f59e0b;
+    --color-accent: #3b82f6;
+    --color-accent-dark: #3474de;
+    --color-light: #f3f4f6;
+    --color-dark: #2e3847;
+    --color-dark-medium: #73737a;
+    --color-dark-light: #bbbbc1;
+    --color-white: #ffffff;
+    --border-medium: 8px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 62.5% of 16px user agent font size is 10px */
+    font-size: 62.5%;
+}
+
+body {
+    /*Fuente importada mediante fonts*/
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    background-color: var(--color-accent);
+}
+
+.nav-bar {
+    background-color: var(--color-accent);
+}
+
+.logo-container img {
+    height: 5rem; /* Ajusta la altura del logo para igualarla al tamaño del texto */
+    width: auto; /* Mantiene la proporción del logo */
+    margin: .8rem;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex: 1;
+    align-content: center;
+    padding: 0 3.2rem;
+    align-items: center;
+    color: var(--color-light);
+}
+
+@media (max-width: 600px) { /* 600px */
+    .logo-container {
+        justify-content: center;
+    }
+}
+
+.logo-text {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+main {
+    padding-top: 3.2rem;
+}
+
+.form-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-dark);
+    align-self: center;
+}
+
+.card {
+    background: white;
+    max-width: 50rem;
+    padding: 2.4rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 1.6rem;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    text-align: start;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: .5rem;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: .4rem;
+    background-color: #EBF2FF;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    background-color: #DCE7FF;
+}
+
+.form-group input.touched:invalid {
+    outline: 2px solid red;
+}
+
+.container {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+.bordered {
+    border: 1px solid #0000001a;
+    border-radius: 1.2rem;
+}
+
+.p-4 {
+    padding: .8rem;
+}
+
+.p-5 {
+    padding: 1.2rem;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn {
+    align-self: center;
+    border: none;
+    padding: 1.2rem 1.6rem;
+    border-radius: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent-dark);
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.register-tittle{
+    font-size: 2rem;
+    font-weight: 400;
+    color: darkgreen;
+}
+
+.container p{
+    font-size: 1.5rem;
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -.5rem;
+    content: "✖";
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -.5rem;
+    content: "✔";
+}
